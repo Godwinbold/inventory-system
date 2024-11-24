@@ -1,19 +1,22 @@
 import React from "react";
-import Header from "./Header"; // Adjust the path as needed
-import Footer from "./Footer"; // Adjust the path as needed
-import { BoxOfDoughnut } from "../../dummys";
+import Header from "./Header"; 
+import Footer from "./Footer"; 
+import { BoxOfDoughnut } from "../../dummys"; 
+import  RiceAndStew  from "../../assets/images/RiceAndStew.jpg";
+import BurgerAndFries from "../../assets/images/BurgerAndFries.jpg"
+
 
 const SnacksComponent = () => {
   const snacks = [
-    { id: 1, name: "Box of Doughnuts", price: "₦2000", image: "https://via.placeholder.com/150" },
-    { id: 2, name: "Burger and Fries", price: "₦2500", image: "https://via.placeholder.com/150" },
-    { id: 3, name: "Rice and Stew", price: "₦1500", image: "https://via.placeholder.com/150" },
-    { id: 4, name: "Box of Doughnuts", price: "₦2000", image: "https://via.placeholder.com/150" },
-    { id: 5, name: "Burger and Fries", price: "₦2500", image: "https://via.placeholder.com/150" },
-    { id: 6, name: "Rice and Stew", price: "₦1500", image: "https://via.placeholder.com/150" },
-    { id: 7, name: "Box of Doughnuts", price: "₦2000", image: "https://via.placeholder.com/150" },
-    { id: 8, name: "Burger and Fries", price: "₦2500", image: "https://via.placeholder.com/150" },
-    { id: 9, name: "Rice and Stew", price: "₦1500", image: "https://via.placeholder.com/150" },
+    { id: 1, name: "Box of Doughnuts", price: "₦2000", image: BoxOfDoughnut },
+    { id: 2, name: "Burger and Fries", price: "₦2500", image: BurgerAndFries },
+    { id: 3, name: "Rice and Stew", price: "₦1500", image: RiceAndStew},
+    { id: 4, name: "Box of Doughnuts", price: "₦2000", image: BoxOfDoughnut },
+    { id: 5, name: "Burger and Fries", price: "₦2500", image: BurgerAndFries },
+    { id: 6, name: "Rice and Stew", price: "₦1500", image: RiceAndStew },
+    { id: 7, name: "Box of Doughnuts", price: "₦2000", image: BoxOfDoughnut },
+    { id: 8, name: "Burger and Fries", price: "₦2500", image: BurgerAndFries },
+    { id: 9, name: "Rice and Stew", price: "₦1500", image: RiceAndStew },
   ];
 
   return (
@@ -45,7 +48,7 @@ const SnacksComponent = () => {
                 className="bg-white rounded-lg shadow p-4 hover:shadow-lg transition"
               >
                 <img
-                  src={BoxOfDoughnut}
+                  src={snack.image}
                   alt={snack.name}
                   className="w-full h-40 object-cover rounded-md mb-4"
                 />
